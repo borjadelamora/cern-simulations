@@ -6,7 +6,7 @@ to CERN. The proposal was titled *Testing the Imaging Properties of Synchrotron
 Radiation and Bremsstrahlung with a Self-Designed X-Ray Camera*, and these
 scripts predict the patterns we expected to measure.
 
-A full write-up of the physics, with the equations and example figures, is on my
+A full write-up of the physics, with the derivations behind each figure, is on my
 website: https://borjadelamora.com/cern-simulations
 
 ## What each script does
@@ -19,6 +19,23 @@ website: https://borjadelamora.com/cern-simulations
 
 The `experiments/` folder holds earlier, rougher scripts kept for reference:
 `bremsstrahlung_3d.py`, `deflection.py`, `frequency.py` and `photocathode.py`.
+
+## Results
+
+Power radiated by a single electron as the beam energy is swept from 1 to 4 GeV,
+in a 700 mT field:
+
+![Synchrotron power against beam energy](images/synchrotron_power.webp)
+
+Power emitted in bremsstrahlung by a single electron striking the lead target,
+against the initial beam energy:
+
+![Bremsstrahlung power against beam energy](images/bremsstrahlung_power.webp)
+
+The intensity pattern expected at the detector for a beam with a Gaussian
+distribution:
+
+![Gaussian beam intensity pattern](images/gaussian_beam_pattern.webp)
 
 ## Running
 
